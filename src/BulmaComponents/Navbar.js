@@ -66,7 +66,7 @@ class NavBar extends Component {
               <a className="navbar-item is-active">
                 Home
               </a>
-              <a className="navbar-item" href="https://github.com/guitartsword/guitartsword.github.io" target="_blank" download>
+              <a className="navbar-item" href="https://github.com/guitartsword/guitartsword.github.io" target="_blank" rel="noopner noreferrer" download>
                 <span className="icon">
                   <i className="fab fa-github"></i>
                 </span>
