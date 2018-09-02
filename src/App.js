@@ -6,10 +6,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <BulmaNav fixed="top" color="primary" variation="dark" hasBurger></BulmaNav>
-        <BulmaHero></BulmaHero>
-        <BulmaHero></BulmaHero>
-        <BulmaNav fixed="bottom" color="primary" variation="light"></BulmaNav>
+        <BulmaNav fixed="top" color="purple" variation="dark" hasBurger></BulmaNav>
+        <BulmaHero color="purple"></BulmaHero>
+        <BulmaNav fixed="bottom" color="purple" variation="light"></BulmaNav>
 
       </div>
     );

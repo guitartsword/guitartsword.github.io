@@ -3,8 +3,9 @@ import Image from './Image';
 import profilePicture from 'profile-pic.jpg';
 class Hero extends Component {
   render() {
+    const {color} = this.props;
     return (
-      <section className="hero is-fullheight is-primary">
+      <section className={`hero is-fullheight is-${color}`}>
         {/* <!-- Hero content: will be in the middle --> */}
         <div className="hero-body">
           <div className="container has-text-centered">

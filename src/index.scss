@@ -5,15 +5,18 @@
 @import "./node_modules/bulma/sass/utilities/functions";
 // 2. Setup your Custom Colors
 $primary: #ffee58;
-$purple: hsl(275,87%,45%);
-$purple-invert: findColorInvert($purple);
-
-$primary: #ffee58;
-$primary-invert: findColorInvert($primary);
+// $primary-invert: findColorInvert($primary);
 $primary-light: #ffff8b;
 $primary-light-invert: findColorInvert($primary-light);
 $primary-dark: #c9bc1f;
 $primary-dark-invert: findColorInvert($primary-dark);
+
+$purple: hsl(275,87%,45%);
+$purple-invert: findColorInvert($purple);
+$purple-light: hsl(275, 88%, 65%);
+$purple-light-invert: findColorInvert($purple-light);
+$purple-dark: hsl(275,87%,25%);
+$purple-dark-invert: findColorInvert($purple-dark);
 
 $secondary: #2962ff; 
 $secondary-invert: findColorInvert($secondary);
@@ -25,6 +28,8 @@ $secondary-dark-invert: findColorInvert($secondary-dark);
 @import "./node_modules/bulma/sass/utilities/derived-variables.sass";
 $addColors: (
   "purple":($purple, $purple-invert),
+  "purple-light":($purple-light, $purple-invert),
+  "purple-dark":($purple-dark, $purple-invert),
   "primary-light":($primary-light, $primary-light-invert),
   "primary-dark":($primary-dark, $primary-dark-invert),
   "secondary":($secondary, $secondary-invert),
