@@ -4,12 +4,32 @@
 @import "./node_modules/bulma/sass/utilities/initial-variables";
 @import "./node_modules/bulma/sass/utilities/functions";
 // 2. Setup your Custom Colors
+$primary: #ffee58;
 $purple: hsl(275,87%,45%);
 $purple-invert: findColorInvert($purple);
+
+$primary: #ffee58;
+$primary-invert: findColorInvert($primary);
+$primary-light: #ffff8b;
+$primary-light-invert: findColorInvert($primary-light);
+$primary-dark: #c9bc1f;
+$primary-dark-invert: findColorInvert($primary-dark);
+
+$secondary: #2962ff; 
+$secondary-invert: findColorInvert($secondary);
+$secondary-light: #768fff; 
+$secondary-light-invert: findColorInvert($secondary-light);
+$secondary-dark: #0039cb; 
+$secondary-dark-invert: findColorInvert($secondary-dark);
 // 3. Add new color variables to the color map.
 @import "./node_modules/bulma/sass/utilities/derived-variables.sass";
 $addColors: (
   "purple":($purple, $purple-invert),
+  "primary-light":($primary-light, $primary-light-invert),
+  "primary-dark":($primary-dark, $primary-dark-invert),
+  "secondary":($secondary, $secondary-invert),
+  "secondary-light":($secondary-light, $secondary-light-invert),
+  "secondary-dark":($secondary-dark, $secondary-dark-invert),
   );
   $colors: map-merge($colors, $addColors);
 @import './node_modules/bulma/bulma';
